@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 // Manually import certificates
 import certificate1 from '../assets/Certificates/CSS.png';
 import certificate2 from '../assets/Certificates/js.png';
-import certificate3 from '../assets/Certificates/MYSQL.png';
+import certificate3 from '../assets/Certificates/MySQL.png';
 import certificate4 from '../assets/Certificates/Mernstack.jpg';
 import certificate5 from '../assets/Certificates/ndr.jpeg';
 import certificate6 from '../assets/Certificates/sql2.jpg';
@@ -31,7 +31,7 @@ const Certificates = () => {
   return (
     <section id="certificates" className="bg-[#0a0129] text-white py-20 flex flex-col items-center">
       {/* Section Title */}
-      <motion.h2 
+      <motion.h2
         className="text-4xl md:text-5xl font-bold text-center mb-12"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -44,13 +44,13 @@ const Certificates = () => {
       <div className="w-full max-w-6xl overflow-x-auto scrollbar-hide">
         <div className="flex gap-6 px-6">
           {certificates.map((certificate, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className="min-w-[250px] md:min-w-[300px] lg:min-w-[350px]"
             >
-              <Card 
+              <Card
                 className="bg-[#111118] shadow-lg shadow-black/40 rounded-xl overflow-hidden"
                 sx={{ borderBottom: `5px solid ${certificate.color}` }}
               >
