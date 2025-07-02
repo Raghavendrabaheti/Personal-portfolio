@@ -45,8 +45,8 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h3>
 
               {[
-                { icon: Mail, title: "Email", content: "raghavendrab1804@gmail.com", href: "mailto:raghavendrab1804@gmail.com" },
-                { icon: Phone, title: "Phone", content: "+91 XXX XXX XXXX", href: "tel:+91XXXXXXXXXX" },
+                { icon: Mail, title: "Email", content: "raghavbaheti1224@gmail.com", href: "mailto:raghavbaheti1224@gmail.com" },
+                { icon: Phone, title: "Phone", content: "+91 7733 XX XXXX", href: "tel:+91XXXXXXXXXX" },
                 { icon: MapPin, title: "Location", content: "Udaipur, Rajasthan, India", href: "#" }
               ].map((item, index) => (
                 <motion.a
@@ -87,7 +87,7 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
                   <input
                     type="text"
-                    placeholder="John"
+                    placeholder="First Name"
                     className="w-full bg-gray-50 border border-gray-200 text-gray-900 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
                   />
                 </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
                   <input
                     type="text"
-                    placeholder="Doe"
+                    placeholder="Last Name"
                     className="w-full bg-gray-50 border border-gray-200 text-gray-900 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
                   />
                 </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                 <input
                   type="email"
-                  placeholder="john.doe@example.com"
+                  placeholder="Email"
                   className="w-full bg-gray-50 border border-gray-200 text-gray-900 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
                 />
               </div>

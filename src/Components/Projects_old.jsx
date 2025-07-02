@@ -145,52 +145,5 @@ const Projects = () => {
     </section>
   );
 };
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-indigo-400 transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                
-                {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex}
-                      className="px-2 py-1 bg-gray-800/50 text-gray-300 text-xs rounded-md"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                
-                {/* Action Links */}
-                <div className="flex items-center justify-between">
-                  <a 
-                    href={project.projectUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-300 text-sm font-medium"
-                  >
-                    <ExternalLink size={16} className="mr-1" />
-                    Live Demo
-                  </a>
-                  <a 
-                    href={project.repoUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-2 text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    <Github size={18} />
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
 
 export default Projects;
