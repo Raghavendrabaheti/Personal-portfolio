@@ -15,7 +15,7 @@ const hackathonProjects = [
     imageUrl: image6,
     projectUrl: 'https://youtu.be/TbkB4ks63Q0',
     repoUrl: 'https://github.com/Tech-Transit',
-    tech: ['React', 'Node.js', 'Algorithms', 'MongoDB'],
+    tech: ['React', 'Python', 'Node.js', 'REST API', 'Algorithms', 'MongoDB'],
     award: 'Winner',
     event: 'Logithon 2024'
   },
@@ -25,7 +25,7 @@ const hackathonProjects = [
     imageUrl: image8,
     projectUrl: 'https://youtu.be/VSc-MrRbV2U',
     repoUrl: 'https://github.com/Raghavendrabaheti/SaleSpeak',
-    tech: ['React', 'FastAPI', 'OpenAI API', 'MongoDB'],
+    tech: ['React', 'Python', 'FastAPI', 'REST API', 'OpenAI API', 'MongoDB'],
     award: 'Runner-up',
     event: 'The Matrix Protocol 2025'
   },
@@ -35,7 +35,7 @@ const hackathonProjects = [
     imageUrl: image9,
     projectUrl: 'https://youtu.be/cCTfVueSOMY',
     repoUrl: 'https://github.com/HACKTHEMM/Voce',
-    tech: ['React', 'FastAPI', 'MongoDB', 'Google Translate API'],
+    tech: ['React', 'Python', 'FastAPI', 'REST API', 'MongoDB', 'Google Translate API'],
     award: 'Finalist',
     event: 'Hack-a-Ton 2025'
   },
@@ -45,7 +45,7 @@ const hackathonProjects = [
     imageUrl: image10,
     projectUrl: 'https://youtu.be/W_R5oUesMf0',
     repoUrl: 'https://github.com/HACKTHEMM/OdooXCGC_TEAM_HACKTHEM',
-    tech: ['Next.js', 'FastAPI', 'PostgreSQL', 'Mapbox'],
+    tech: ['Next.js', 'Python', 'FastAPI', 'REST API', 'PostgreSQL', 'Mapbox'],
     award: 'Finalist',
     event: 'OdooXcGc Hackathon 2024'
   },
