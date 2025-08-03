@@ -8,8 +8,27 @@ import image1 from '../assets/SSProject/MultiGame.png';
 import image2 from '../assets/SSProject/name.png';
 import image3 from '../assets/SSProject/bilingsys.png';
 import image4 from '../assets/SSProject/tictactoe.png';
+import gaadiImage from '../assets/SSProject/GadiSetGo_img.png';
+import stackitImage from '../assets/SSProject/Odoo_img.png';
+
 
 const projectsData = [
+  {
+    title: 'GaadiSetGo',
+    description: 'A smart vehicle parking and management system with real-time slot tracking, vehicle services, and user/admin roles.',
+    imageUrl: gaadiImage,
+    projectUrl: 'https://gaadisetgo.netlify.app/', // update if hosted elsewhere
+    repoUrl: 'https://github.com/raghavendrabaheti/gaadisetgo', // update if different
+    tech: ['React', 'FastAPI', 'MySQL', 'Tailwind CSS']
+  },
+  {
+    title: 'StackIt - Q&A Platform',
+    description: 'A full-stack collaborative Q&A platform with modern UI, real-time features, and PostgreSQL-backed data intelligence.',
+    imageUrl: stackitImage, // replace with actual imported image or path
+    projectUrl: 'https://stackit-procrastinators.netlify.app/', // update if hosted
+    repoUrl: 'https://github.com/HACKTHEMM/Odoo_Team_Procrastinators_Submission',
+    tech: ['Next.js', 'Node.js', 'Express', 'PostgreSQL', 'Tailwind CSS', 'TypeScript']
+  },
   {
     title: 'DSA Quiz Platform',
     description:

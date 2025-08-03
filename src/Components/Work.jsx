@@ -4,17 +4,50 @@ import { ExternalLink, Github, Zap, Trophy, ArrowUpRight } from 'lucide-react';
 import image5 from '../assets/SSProject/SIH.png';
 import image6 from '../assets/SSProject/logithon.jpeg';
 import image7 from '../assets/SSProject/sih24.jpeg';
+import image8 from '../assets/SSProject/SalesSpeak_img.png';
+import image9 from '../assets/SSProject/Vocee_img.png';
+import image10 from '../assets/SSProject/CivicTracker_img.png';
 
 const hackathonProjects = [
   {
     title: 'Multi-Modal Cross-Border Route Selector',
     description: 'Advanced logistics optimization system leveraging Dijkstra Algorithm for efficient cross-border routing with real-time tracking capabilities.',
     imageUrl: image6,
-    projectUrl: 'https://github.com/Tech-Transit',
+    projectUrl: 'https://youtu.be/TbkB4ks63Q0',
     repoUrl: 'https://github.com/Tech-Transit',
     tech: ['React', 'Node.js', 'Algorithms', 'MongoDB'],
     award: 'Winner',
     event: 'Logithon 2024'
+  },
+  {
+    title: 'SalesSpeak – AI Sales Chatbot',
+    description: 'Conversational AI chatbot that automates lead qualification and assists customers with smart product recommendations using NLP.',
+    imageUrl: image8,
+    projectUrl: '#',
+    repoUrl: 'https://github.com/Raghavendrabaheti/SaleSpeak',
+    tech: ['React', 'FastAPI', 'OpenAI API', 'MongoDB'],
+    award: 'Runner-up',
+    event: 'The Matrix Protocol 2025'
+  },
+  {
+    title: 'Voce – The Voice of City',
+    description: 'A multilingual civic engagement platform allowing citizens to raise local issues via voice or text input, enriched with sentiment analysis and translation support.',
+    imageUrl: image9,
+    projectUrl: 'https://youtu.be/cCTfVueSOMY',
+    repoUrl: 'https://github.com/HACKTHEMM/Voce',
+    tech: ['React', 'FastAPI', 'MongoDB', 'Google Translate API'],
+    award: 'Finalist',
+    event: 'Hack-a-Ton 2025'
+  },
+  {
+    title: 'CivicTrack – Civic Issue Tracker',
+    description: 'Location-based platform to report and monitor civic issues like potholes, garbage, and water leaks with status tracking, moderation, and analytics.',
+    imageUrl: image10,
+    projectUrl: 'https://youtu.be/W_R5oUesMf0',
+    repoUrl: 'https://github.com/HACKTHEMM/OdooXCGC_TEAM_HACKTHEM',
+    tech: ['Next.js', 'FastAPI', 'PostgreSQL', 'Mapbox'],
+    award: 'Finalist',
+    event: 'OdooXcGc Hackathon 2024'
   },
   {
     title: 'Smart India Hackathon 2023',
@@ -35,7 +68,8 @@ const hackathonProjects = [
     tech: ['React', 'MongoDB', 'Express', 'AI'],
     award: 'Participant',
     event: 'SIH 2024'
-  }
+  },
+
 ];
 
 const Work = () => {
@@ -267,9 +301,9 @@ const Work = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { number: "3+", label: "Hackathons Participated" },
+              { number: "10+", label: "Hackathons Participated" },
               { number: "1", label: "Winning Project" },
-              { number: "2", label: "Finalist Positions" }
+              { number: "4+", label: "Finalist Positions" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

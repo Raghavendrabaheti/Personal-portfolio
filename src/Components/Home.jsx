@@ -93,7 +93,7 @@ const Home = () => {
           >
             {[
               { number: "5+", label: "Projects" },
-              { number: "3", label: "Hackathons" },
+              { number: "10+", label: "Hackathons" },
               { number: "7+", label: "Certificates" }
             ].map((stat, index) => (
               <motion.div
