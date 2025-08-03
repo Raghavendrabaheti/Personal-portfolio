@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
 import profilePic from "../assets/profile.jpeg";
+import resumePdf from "../assets/Raghavendra.pdf";
 
 const Home = () => {
   return (
@@ -74,7 +75,7 @@ const Home = () => {
             </a>
 
             <a
-              href="/Raghavendraa.pdf"
+              href={resumePdf}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center px-8 py-4 border-2 border-gray-200 text-gray-700 rounded-2xl hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 hover:scale-105"

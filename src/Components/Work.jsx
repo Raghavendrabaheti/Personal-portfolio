@@ -17,7 +17,7 @@ const hackathonProjects = [
     repoUrl: 'https://github.com/Tech-Transit',
     tech: ['React', 'Python', 'Node.js', 'REST API', 'Algorithms', 'MongoDB'],
     award: 'Winner',
-    event: 'Logithon 2024'
+    event: 'Logithon 2025'
   },
   {
     title: 'SalesSpeak – AI Sales Chatbot',
@@ -47,7 +47,7 @@ const hackathonProjects = [
     repoUrl: 'https://github.com/HACKTHEMM/OdooXCGC_TEAM_HACKTHEM',
     tech: ['Next.js', 'Python', 'FastAPI', 'REST API', 'PostgreSQL', 'Mapbox'],
     award: 'Finalist',
-    event: 'OdooXcGc Hackathon 2024'
+    event: 'OdooXcGc Hackathon 2025'
   },
   {
     title: 'Smart India Hackathon 2023',
