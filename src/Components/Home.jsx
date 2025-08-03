@@ -92,9 +92,9 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             {[
-              { number: "5+", label: "Projects" },
-              { number: "10+", label: "Hackathons" },
-              { number: "7+", label: "Certificates" }
+              { number: "10+", label: "Projects" },
+              { number: "15+", label: "Hackathons" },
+              { number: "10+", label: "Certificates" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

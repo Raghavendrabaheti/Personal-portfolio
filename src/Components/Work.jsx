@@ -23,7 +23,7 @@ const hackathonProjects = [
     title: 'SalesSpeak – AI Sales Chatbot',
     description: 'Conversational AI chatbot that automates lead qualification and assists customers with smart product recommendations using NLP.',
     imageUrl: image8,
-    projectUrl: '#',
+    projectUrl: 'https://youtu.be/VSc-MrRbV2U',
     repoUrl: 'https://github.com/Raghavendrabaheti/SaleSpeak',
     tech: ['React', 'FastAPI', 'OpenAI API', 'MongoDB'],
     award: 'Runner-up',
@@ -301,7 +301,7 @@ const Work = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { number: "10+", label: "Hackathons Participated" },
+              { number: "15+", label: "Hackathons Participated" },
               { number: "1", label: "Winning Project" },
               { number: "4+", label: "Finalist Positions" }
             ].map((stat, index) => (
