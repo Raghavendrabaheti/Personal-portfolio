@@ -7,8 +7,19 @@ import image7 from '../assets/SSProject/sih24.jpeg';
 import image8 from '../assets/SSProject/SalesSpeak_img.png';
 import image9 from '../assets/SSProject/Vocee_img.png';
 import image10 from '../assets/SSProject/CivicTracker_img.png';
+import image11 from '../assets/SSProject/Lumenfx.png';
 
 const hackathonProjects = [
+  {
+    title: 'LumenFX - Crypto Payment Gateway',
+    description: 'Advanced Crypto Payment Gateway with real-time market analysis, predictive analytics, and automated trading strategies.',
+    imageUrl: image11,
+    projectUrl: 'https://youtu.be/xYqvJ3oMA48',
+    repoUrl: 'https://github.com/HACKTHEMM',
+    tech: ['React', 'Rust','Web3', 'Node.js', 'REST API', 'Algorithms', 'SupaBase'],
+    award: 'Winner',
+    event: '0xGenignite 2025 at NIT Goa'
+  },
   {
     title: 'Multi-Modal Cross-Border Route Selector',
     description: 'Advanced logistics optimization system leveraging Dijkstra Algorithm for efficient cross-border routing with real-time tracking capabilities.',
@@ -17,7 +28,7 @@ const hackathonProjects = [
     repoUrl: 'https://github.com/Tech-Transit',
     tech: ['React', 'Python', 'Node.js', 'REST API', 'Algorithms', 'MongoDB'],
     award: 'Winner',
-    event: 'Logithon 2025'
+    event: 'Logithon 2025 at IIT Bombay'
   },
   {
     title: 'SalesSpeak – AI Sales Chatbot',
