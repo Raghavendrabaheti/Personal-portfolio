@@ -7,7 +7,7 @@ import image7 from '../assets/SSProject/sih24.jpeg';
 import image8 from '../assets/SSProject/SalesSpeak_img.png';
 import image9 from '../assets/SSProject/Vocee_img.png';
 import image10 from '../assets/SSProject/CivicTracker_img.png';
-import image11 from '../assets/SSProject/lumenfx.png';
+import image11 from '../assets/SSProject/Lumenfx.png';
 
 const hackathonProjects = [
   {
