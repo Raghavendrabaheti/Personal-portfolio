@@ -7,7 +7,7 @@ import image7 from '../assets/SSProject/sih24.jpeg';
 import image8 from '../assets/SSProject/SalesSpeak_img.png';
 import image9 from '../assets/SSProject/Vocee_img.png';
 import image10 from '../assets/SSProject/CivicTracker_img.png';
-import image11 from '../assets/SSProject/Lumenfx.png';
+import image11 from '../assets/SSProject/lumenfx.png';
 
 const hackathonProjects = [
   {
@@ -312,9 +312,9 @@ const Work = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { number: "15+", label: "Hackathons Participated" },
-              { number: "1", label: "Winning Project" },
-              { number: "4+", label: "Finalist Positions" }
+              { number: "20+", label: "Hackathons Participated" },
+              { number: "5", label: "Winning Project" },
+              { number: "12+", label: "Finalist Positions" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

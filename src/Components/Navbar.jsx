@@ -1,12 +1,28 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { Menu, X, Github, Linkedin } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrolled(latest > 50);
+  });
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-xl shadow-sm border-b border-gray-50 py-3 px-6 z-50">
+    <motion.nav 
+      className="fixed top-0 left-0 w-full z-50 py-3 px-6"
+      animate={{
+        backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.95)',
+        backdropFilter: 'blur(20px)',
+        boxShadow: scrolled ? '0 4px 20px rgba(0, 0, 0, 0.05)' : '0 2px 10px rgba(0, 0, 0, 0.03)',
+        borderBottomWidth: scrolled ? '1px' : '0',
+        borderColor: 'rgba(0, 0, 0, 0.05)',
+      }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo/Brand */}
         <motion.div
@@ -114,7 +130,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 };
 

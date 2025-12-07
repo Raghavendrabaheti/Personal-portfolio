@@ -47,14 +47,13 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                <span className="text-gray-900">DevOps Engineer</span> &
+                <span className="text-gray-900">Software Enthusiast</span> &
                 <br />
-                <span className="text-black">Full Stack Developer</span>
+                <span className="text-black">Backend Developer</span>
               </p>
               <p className="text-xl text-gray-600 max-w-lg leading-relaxed font-light">
-                I craft scalable digital experiences with clean code, robust architecture,
-                and seamless deployment pipelines that transform ideas into reality.
-              </p>
+              I love building systems that scale — from designing robust APIs to optimizing databases for real-world performance. Always learning, always improving.
+               </p>
 
             </motion.div>
           </div>
@@ -93,8 +92,8 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             {[
-              { number: "10+", label: "Projects" },
-              { number: "15+", label: "Hackathons" },
+              { number: "15+", label: "Projects" },
+              { number: "20+", label: "Hackathons" },
               { number: "10+", label: "Certificates" }
             ].map((stat, index) => (
               <motion.div
@@ -112,23 +111,27 @@ const Home = () => {
 
         {/* Profile Image */}
         <motion.div
-          className="flex justify-center lg:justify-end"
+          className="flex justify-center lg:justify-end group"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <div className="relative">
-            <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-100">
+            <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-2xl ring-1 ring-gray-100 group/image">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 opacity-0 group-hover/image:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
               <img
                 src={profilePic}
                 alt="Raghavendra Baheti"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover group-hover/image:scale-110 transition-all duration-700"
               />
             </div>
-            {/* Floating Elements */}
-            <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl -z-10 animate-pulse"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl -z-10"></div>
-            <div className="absolute -top-2 -left-2 w-12 h-12 bg-white rounded-xl shadow-lg -z-10"></div>
+            {/* Floating Elements with gradients */}
+            <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-purple-200 to-pink-200 rounded-2xl -z-10 animate-pulse blur-sm"></div>
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-blue-200 to-cyan-200 rounded-3xl -z-10 blur-sm"></div>
+            <div className="absolute -top-2 -left-2 w-12 h-12 bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg -z-10"></div>
+            
+            {/* Glow effect on hover */}
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-purple-500/30 via-transparent to-pink-500/30 blur-2xl -z-20"></div>
           </div>
         </motion.div>
       </div>

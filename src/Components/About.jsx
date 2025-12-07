@@ -4,9 +4,9 @@ import { Code, Database, Cloud, Cpu, Zap } from "lucide-react";
 const About = () => {
   const skills = [
     { icon: Code, name: "Full-Stack Development", desc: "MERN Stack, React, Node.js", color: "from-blue-500 to-cyan-500" },
-    { icon: Database, name: "Backend & Databases", desc: "Java, MongoDB, MySQL", color: "from-green-500 to-emerald-500" },
+    { icon: Database, name: "Backend & Databases", desc: "Python, MongoDB, MySQL", color: "from-green-500 to-emerald-500" },
     { icon: Cloud, name: "DevOps & Cloud", desc: "AWS, Docker, CI/CD", color: "from-purple-500 to-pink-500" },
-    { icon: Cpu, name: "Problem Solving", desc: "DSA, Algorithms, Java", color: "from-orange-500 to-red-500" },
+    { icon: Cpu, name: "Problem Solving", desc: "DSA, Algorithms, Python", color: "from-orange-500 to-red-500" },
   ];
 
   return (
@@ -53,33 +53,9 @@ const About = () => {
                 currently pursuing my degree at Techno India NJR.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                I specialize in <span className="text-gray-800 font-semibold">Full-Stack Development</span> with
-                the MERN stack and have extensive experience in <span className="text-gray-800 font-semibold">DevOps</span> practices,
-                cloud deployment, and automation.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                With a strong foundation in <span className="text-gray-900 font-semibold">Java & Data Structures</span>,
-                I'm passionate about problem-solving, algorithm optimization, and building scalable applications.
+                I specialize in <span className="text-gray-800 font-semibold">Backend Development using Python and Node.js</span> and have extensive experience in <span className="text-gray-800 font-semibold">DevOps</span> practices,
               </p>
             </div>
-
-            {/* CTA Button */}
-            <motion.a
-              href="#contact"
-              className="inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span>Let's Work Together</span>
-              <motion.div
-                className="ml-2"
-                initial={{ x: 0 }}
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
-              >
-                →
-              </motion.div>
-            </motion.a>
           </motion.div>
 
           {/* Skills Grid */}
@@ -118,18 +94,10 @@ const About = () => {
         >
           <h3 className="text-2xl font-semibold mb-10 text-gray-900">Technologies I Love Working With</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {["React", "Node.js", "MongoDB", "Java", "AWS", "Docker", "Python", "MySQL"].map((tech, index) => (
-              <motion.span
-                key={index}
-                className="px-6 py-3 bg-white text-gray-700 rounded-full text-sm font-medium border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 hover:scale-105"
-                whileHover={{ scale: 1.05 }}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
+            {["React", "Node.js", "MongoDB", "Python", "AWS", "Docker", "Python", "MySQL"].map((tech, index) => (
+              <div key={index} className="px-6 py-3 bg-white text-gray-700 rounded-full text-sm font-medium border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all duration-200 hover:scale-105">
                 {tech}
-              </motion.span>
+              </div>
             ))}
           </div>
         </motion.div>
